@@ -9,12 +9,12 @@ http.createServer(function (request, response) {
 var express = require('express');
 var app = express();
 
-app.get('/fetch', function (req, res) {
+app.get('/fetch', function (req, response) {
 	response.writeHead(200, {"Content-type" : "text/plain" } );
 	response.end("fetch success!");
 });
 
-app.get('/', function (req, res) {
+app.get('/', function (req, response) {
 	response.writeHead(200, {"Content-type" : "text/plain" } );
 	response.end("/ success!");
 });
